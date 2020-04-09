@@ -5,7 +5,7 @@ template.innerHTML = `
 
 class characterList extends HTMLElement {
 
-        set characters(val) {
+        set characters(value) {
             this._characters = value;
             this._render();
         }

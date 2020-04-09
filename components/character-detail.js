@@ -19,9 +19,9 @@ class characterDetail extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <h2>${this.character.name}</h2>
             <ul>
-                <li>height: ${this.character.height}</li>
-                <li>mass: ${this.character.mass}</li>
-                <li>birth_year: ${this.character.birth_year}</li>
+                <li>status: ${this.character.status}</li>
+                <li>species: ${this.character.species}</li>
+                <li>gender: ${this.character.gender}</li>
             </ul>
         `;
     }

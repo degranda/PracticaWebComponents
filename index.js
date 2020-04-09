@@ -6,9 +6,9 @@ const characterDetailComponent = document.querySelector('character-detail');
 
 characterListComponent.addEventListener('selectedCharacter', e => characterDetailComponent.character = e.detail);
 
-fetch ('https://swapi.co/api/people/')
+fetch('https://rickandmortyapi.com/api/character')
     .then(res => res.json())
     .then(data => {
         characterListComponent.characters = data.results;
         characterDetailComponent.character = data.results[0];
-    })
+});
